@@ -7,8 +7,21 @@ Visit [the page here.](https://github.com/nim-lang/sdl2)
 
 ## Example
 To open a window in this engine/framework, you'll first need to have the
-engine files somewhere in your project directory. I have mine in `src/engine/*`.
+engine files somewhere in your project directory.
 
+My file structure goes:
+```
+project/
+    src/
+       engine/
+         basicengine.nim
+         renderer.nim
+         basicmath.nim
+         input.nim
+ main.nim
+    
+```
+### main.nim
 ```
 import "src/engine/basicengine"
 import "src/engine/renderer"
@@ -29,4 +42,7 @@ while engine.isRunning:
     engine.basicEngineEnd()
 ```
 
+
+
 And there you go! A simple window that you can draw to!
+I have a simple 2D platformer in `examples`
